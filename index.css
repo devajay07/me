@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "Merkur";
+  src: url("./fonts/Merkur.otf");
+}
+@font-face {
+  font-family: "UglyByte";
+  src: url("./fonts/UglyByte.otf");
+}
+@font-face {
+  font-family: "Pixelated";
+  src: url("./fonts/Pixelated.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("./images/navigation.png"), auto;
+}
+
+body {
+  overflow: hidden;
+  background-color: rgb(8, 8, 8);
+}
+
+.name {
+  text-align: center;
+  margin: 2rem 0 0.3rem 0;
+  font-size: 4rem;
+  color: white;
+  font-family: "UglyByte";
+}
+
+.divider {
+  width: 80vw;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  background-color: rgb(167, 167, 167);
+  border-radius: 50%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  padding: 0 20vw;
+  margin-top: 5rem;
+}
+
+.intro-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.greet h1 {
+  font-size: 6rem;
+  font-family: "Pixelated";
+  color: rgb(255, 36, 105);
+  letter-spacing: 0.5rem;
+  font-weight: 500;
+}
+
+.me {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.me img {
+  width: 250px;
+  opacity: 0.9;
+  border-radius: 10%;
+  /* background-color: rgb(219, 249, 248); */
+}
+.me p {
+  font-size: 2rem;
+  font-family: "Merkur";
+  font-weight: bold;
+  color: rgb(167, 167, 167);
+}
+
+.project-section {
+  margin-top: rem;
+  display: flex;
+  flex-wrap: wrap; /* Added flex-wrap */
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.project-section p {
+  font-size: 5rem;
+  font-family: "UglyByte";
+}
+
+.projects {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  gap: 20px;
+  font-family: "UglyByte";
+}
+
+.projects span {
+  font-size: 3rem;
+}
+
+.projects span a {
+  text-decoration: underline;
+  color: rgb(245, 241, 241);
+  cursor: url("./images/navigation.png"), auto;
+  transition: color 0.2s;
+}
+
+.projects span a:hover {
+  color: rgb(97, 97, 97);
+}
+
+.seperator {
+  width: 4px;
+  height: 20px;
+  background-color: rgb(255, 36, 105);
+}
+
+.projects span:nth-child(4) {
+  color: rgb(255, 36, 105);
+  font-family: bolder;
+}
+
+.socials {
+  position: fixed;
+  bottom: 2px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  gap: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.socials a {
+  transition: color 0.2s;
+  color: rgb(198, 198, 198);
+}
+
+.socials a:hover {
+  color: rgb(255, 36, 105);
+}
+
+/* Add these media queries for smartphone and general responsiveness */
+@media only screen and (max-width: 768px) {
+  .name {
+    font-size: 3rem;
+  }
+
+  .intro-section {
+    width: 100vw;
+    height: 200px;
+  }
+
+  .me {
+    margin-left: -80px;
+  }
+
+  .main-content {
+    gap: 5rem;
+    padding: 0 10vw;
+    margin-top: 3rem;
+  }
+
+  .greet h1 {
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+  }
+  .me img {
+    width: 150px;
+  }
+
+  .me p {
+    font-size: 1.5rem;
+  }
+
+  .project-section {
+    gap: 20px;
+  }
+  .project-section p {
+    font-size: 4rem;
+  }
+
+  .projects {
+    font-size: 1.5rem;
+  }
+
+  .projects span {
+    font-size: 2.2rem;
+  }
+
+  .socials {
+    font-size: 2rem;
+  }
+  .me {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3.3rem;
+    text-align: center;
+  }
+}

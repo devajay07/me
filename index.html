@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Ajay Yadav</title>
+  </head>
+  <body>
+    <h1 class="name">Ajay Yadav</h1>
+    <div class="divider"></div>
+    <div class="main-content">
+      <div class="intro-section">
+        <div class="greet">
+          <h1>hey</h1>
+          <h1>human,</h1>
+        </div>
+        <div class="me">
+          <img src="./images/hehe.png" />
+          <p>this is me ?</p>
+        </div>
+      </div>
+      <div class="project-section">
+        <p>See,</p>
+        <div class="projects">
+          <span
+            ><a target="_blank" href="https://speedysend.in"
+              >SpeedySend</a
+            ></span
+          >
+          <div class="seperator"></div>
+          <span
+            ><a target="_blank" href="https://bestvideoonearth.onrender.com"
+              >dailylogs</a
+            ></span
+          >
+          <span>&</span>
+          <span
+            ><a target="_blank" href="https://bestvideoonearth.onrender.com"
+              >My Fav.</a
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="socials">
+      <a target="_blank" href="https://github.com/devajay07">
+        <i class="fa-brands fa-github-alt fa-bounce"></i>
+      </a>
+      <a target="_blank" href="mailto:devayyadav07@gmail.com">
+        <i class="fa-solid fa-envelope fa-bounce"></i>
+      </a>
+    </div>
+  </body>
+  <script>
+    const imageElement = document.querySelector(".me img");
+    const originalSrc = imageElement.src;
+    const newSrc = "./images/ascii.png"; // Replace this with the path of the new image
+
+    imageElement.addEventListener("mouseover", () => {
+      imageElement.src = newSrc;
+    });
+
+    imageElement.addEventListener("mouseout", () => {
+      imageElement.src = originalSrc;
+    });
+  </script>
+</html>
