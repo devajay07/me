@@ -129,11 +129,6 @@ body {
   background-color: rgb(255, 36, 105);
 }
 
-.projects span:nth-child(4) {
-  color: rgb(255, 36, 105);
-  font-family: bolder;
-}
-
 .socials {
   position: fixed;
   bottom: 2px;
@@ -171,7 +166,7 @@ body {
   }
 
   .main-content {
-    gap: 5rem;
+    gap: 2rem;
     padding: 0 10vw;
     margin-top: 3rem;
   }
